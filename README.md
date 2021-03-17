@@ -15,5 +15,12 @@ Tasks:  "1-When the Service provider clicks on Add Service details link, it shou
          4-Service provider failing to provide information on the mandatory fields be provided with an alert message – ‘Please update the highlighted mandatory field(s).’ Also,            highlight the missed out field in red
           5-Post-successful field level validation, save the information in the database
          6-Upon saving the information in the database, display the message ‘Your details are submitted successfully’.
-
+ US_7: Add service caterogies:
+ Tasks:  "1-Admin on clicking Add Service categories should re direct to the Add service page
+        2-Admin needs to fill some of the basic attributes/fields as mentioned below in requirement: Service ID, Service Name, Service Type
+       3-Clicking ‘Submit’ should validate the datatype constraints for each field
+       4-Admin failing to provide information on the mandatory fields be provided with an alert message – ‘Please update the highlighted mandatory field(s).’ Also, highlight the          missed out field in red
+       5-Post-successful field level validation, save the information in the database    
+       6-Upon saving the information in the database, display the message ‘Your details are submitted successfully’.
+"
            
