@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<style>
+			#menu-bar-container
+			{
+				background-color:#658BFF;
+				height:70px;
+				border-top:1px #cccccc solid;
+			}
+
+			#menu-bar
+			{
+				width:1000px;
+				margin:0 auto;
+			}
+
+			h1
+			{
+				padding:0;
+				margin:0;
+				color:white;
+				font-size:40px;
+				font-weight:normal;
+				font-color:white;
+				padding-top:10px;
+				padding-left:30%;
+			}
+
+			form
+			{
+				padding-top:40px;
+				padding-left:500px;
+			}
+
+			body
+			{
+				background-image: url('bg.jpg');
+				background-size:cover;
+			}
+
+			.input1
+			{
+				padding-left:10px;
+				padding-top:10px;
+			}
+
+			#inp
+			{
+				text-align:center;
+			}
+
+			.button
+			{
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+
+			.logout
+			{
+				position:fixed;
+				right:10px;
+				top:90px;
+				font-size: 25px;
+			}
+
+		</style>
+		
+		<script type="text/javascript">
+			
+			function callServlet1()
+        	{
+            	document.forms[0].action = "View_Service_Provider_Requests_Servlet";
+            	document.forms[0].submit();
+        	}
+	        function callServlet2()
+	        {
+	            document.forms[0].action = "View_Services_Servlet";
+	            document.forms[0].submit();
+	        }
+	        function callServlet3()
+	        {
+	            document.forms[0].action = "View_Service_Categories_Servlet";
+	            document.forms[0].submit();
+	        }
+	        
+	        
+	    </script>
+	    
+		<title>Admin Action Form</title>
+
+	</head>
+
+	<body>
+
+		<div id="menu-bar-container">
+		<div id="menu-bar"><h1>SEARCH FOR HEALTH CARE</h1></div>
+		</div>
+
+		<form name="adminaction" method="post" action="Logout_Servlet">
+
+			<input type="submit" class="button" value="View Service Provider Request" onclick="callServlet1();"><br>
+			<br>
+
+			<input type="button" class="button" style="padding-right:88px;" value="Add Service Categories" onclick="window.location.href='Add_Service_Categories.html';">
+			<br>
+			<br>
+			<input type="submit" class="button" style="padding-right:158px;" value="View Services" onclick="callServlet2();"><br>
+			<br>
+			<br>
+			<input type="submit" class="button" style="padding-right:86px;" value="View Service Categories" onclick="callServlet3();"><br>
+			<br>
+			
+    		<input name="logout" class="logout" type="submit" id="submit" value="Logout">
+ 
+		</form>
+		
+	</body>
+
+</html>
